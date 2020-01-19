@@ -1,0 +1,66 @@
+#title{
+    font-size: 35px;
+    font-family: 'Courgette', cursive;
+    color:orange;
+  }
+  
+  #logo{
+    font-size: 35px;
+    font-family: 'Courgette', cursive;
+    color:orange;
+    
+  }
+  
+  .longButton{
+    width: 300px;
+    margin-left: 5px;
+    border-radius: 5px;
+  }
+  
+  #timer{
+    color:yellow;
+    font-size: 80px;
+    margin-top: 30px;
+  }
+  
+  .largeButton{
+    margin-right: 40px;
+    margin-left: 40px;
+    height: 50px;
+    width: 100px;
+
+    font-weight: bold;
+  }
+  
+  #start{
+    background-color:green;
+    border-color: green;
+  }
+  
+  #stop{
+    background-color: red;
+    border-color: red;
+  }
+  
+  #reset{
+    background-color: grey;
+    border-color: grey;
+  }
+  
+  #timeChange{
+    color: pink;
+  }
+  
+  #timeChange{
+    margin-top: 25px;
+  }
+  
+  #addTime{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  
+  #minusTime{
+    margin-right: 15px;
+    margin-left: 15px;
+  }

@@ -1,0 +1,19 @@
+<span id="title">Pomodoro Clock</span>
+<span id="logo" style = "float:right;">Work Smarter and Live Better</span>  
+<br/>
+<br/>
+<div class="text-center">
+  <button class="btn btn-primary longButton" id="pomodoro" (click)="setMode('pomodoro')">Pomodoro</button>
+  <button class="btn btn-primary longButton" id="shortBreak" (click)="setMode('shortBreak')">Short Break</button>
+  <button class="btn btn-primary longButton" id="longBreak" (click)="setMode('longBreak')">Long Break </button>
+  <br/>
+  
+  <p id="timer">{{currMinuteTimeString}}:{{currSecondTimeString}}</p>
+  
+  <br/>
+  <br/>
+ 
+  <button class="btn btn-primary largeButton" id="start" (click)="startTimer()">Start</button>
+  <button class="btn btn-primary largeButton" id="stop" (click)="stopTimer()">Stop</button>
+  <button class="btn btn-primary largeButton" id="reset" (click)="resetTimer()">Reset</button>
+</div>

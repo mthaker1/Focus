@@ -13,12 +13,20 @@ import { LoginComponent } from './components/login/login.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
+import { MotivationalQuoteComponent } from './components/motivational-quote/motivational-quote.component';
 
 import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import { NgFlashMessagesModule } from 'ng-flash-messages';
+import { PushNotificationService } from 'ngx-push-notifications';
+
 
 import {AuthGuard} from './guards/auth.guard';
+import { PomodoroTimerComponent } from './components/pomodoro-timer/pomodoro-timer.component';
+
+
+
+
 
 
 const appRoutes: Routes = [
@@ -26,7 +34,9 @@ const appRoutes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
-  {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]}
+  {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
+  {path: 'motivational-quote', component: MotivationalQuoteComponent, canActivate: [AuthGuard]},
+  {path: 'pomodoro-timer', component: PomodoroTimerComponent, canActivate: [AuthGuard]}
 ];
 
 
@@ -38,7 +48,9 @@ const appRoutes: Routes = [
     LoginComponent,
     NavbarComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    MotivationalQuoteComponent,
+    PomodoroTimerComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +60,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     NgFlashMessagesModule.forRoot()
   ],
-  providers: [ValidateService, AuthService, AuthGuard],
+  providers: [ValidateService, AuthService, AuthGuard, PushNotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
