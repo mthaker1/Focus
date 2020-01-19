@@ -1,4 +1,6 @@
-# MyApp
+# Focus
+
+This app is a tool to help improve user time management skills
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
 
