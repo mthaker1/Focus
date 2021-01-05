@@ -21,7 +21,7 @@
     "@angular/router": "~8.2.11",
     "@auth0/angular-jwt": "^3.0.1",
     "@types/axios": "^0.14.0",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "bcryptjs": "*",
     "body-parser": "*",
     "cors": "*",
